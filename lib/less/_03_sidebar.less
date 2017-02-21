@@ -1,0 +1,38 @@
+/* Sidebar menus */
+.ascend #sidebar{
+  div ul.menu li{
+      border-bottom: 1px solid rgba(119,120,123,0.2) !important;
+      padding: 0;
+
+      &.current-menu-item > a{
+        background-color: @blue;
+        color: #fff;
+      }
+
+      &:last-of-type{
+        border-bottom: none!important;
+      }
+
+      a{
+        color: @gray;
+        display: block;
+        padding: 12px;
+        font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      & > a:hover{
+        background-color: @secondarylightblue;
+        color: #fff;
+      }
+
+      .sub-menu{
+        /*border-left: 6px solid lighten(@gray,60%);*/
+
+        li a{
+          font-size: 14px;
+        }
+      }
+  }
+}

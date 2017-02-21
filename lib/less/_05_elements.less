@@ -1,0 +1,30 @@
+/* A table of links, used on the home page */
+.main-content .link-table{
+  a{
+    display: block;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+
+    &:hover{
+      background-color: @blue;
+      color: #fff;
+    }
+  }
+
+  tr td{
+    padding: 0;
+  }
+}
+
+.toprow{
+    margin-top: -38px;
+}
+
+/* Full Width Headers */
+@media (min-width: 1001px){
+    #page-header-bg[data-bg-pos="top"] .page-header-bg-image{
+        background-position: 50% 60px;
+        background-size: auto 240px;
+    }
+}
