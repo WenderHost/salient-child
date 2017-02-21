@@ -1,4 +1,6 @@
 node_modules/
 lib/less/parent-css/
 *.sublime-*
-lib/css/
+lib/css/*.css
+lib/css/*.map
+!lib/css/editor-styles.css
