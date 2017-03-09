@@ -1,5 +1,7 @@
 <?php
 
+include_once 'lib/fns/plugins.php';
+
 add_action( 'wp_enqueue_scripts', 'salient_parent_theme_enqueue_styles', 99 );
 function salient_parent_theme_enqueue_styles() {
     $deregister_styles = ['salient-style','rgs','font-awesome','main-styles','responsive','skin-ascend'];
