@@ -1,6 +1,7 @@
 <?php
-
+// Include files
 include_once 'lib/fns/plugins.php';
+include_once 'lib/fns/tinymce.php';
 
 add_action( 'wp_enqueue_scripts', 'salient_parent_theme_enqueue_styles', 99 );
 function salient_parent_theme_enqueue_styles() {
