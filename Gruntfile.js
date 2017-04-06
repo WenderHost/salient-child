@@ -18,6 +18,7 @@ module.exports = function(grunt) {
             content = content.replace(/..\/img/g, '../../../salient/img');
             content = content.replace(/img\/textures/g, '../../../salient/img/textures');
             content = content.replace(/img\/icons/g, '../../../salient/img/icons');
+            content = content.replace(/img\/transparent/g, '../../../salient/img/transparent');
             return content;
           }
         }
