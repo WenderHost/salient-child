@@ -67,20 +67,8 @@ module.exports = function(grunt) {
           nospawn: true
         }
       },
-      htmlincludes: {
-        files: ['lib/html/*.html'],
-        options: {
-          nospawn: true
-        }
-      },
       js: {
-        files: ['js/*.js'],
-        options: {
-          nospawn: true
-        }
-      },
-      json: {
-         files: ['lib/json/*.json'],
+        files: ['lib/js/**/*.js'],
         options: {
           nospawn: true
         }
@@ -91,9 +79,7 @@ module.exports = function(grunt) {
         bsFiles: {
           src: [
             "lib/less/**/*.less",
-            "lib/html/*.html",
-            "js/*.js",
-            "lib/json/*.json"
+            "lib/js/**/*.js"
           ]
         },
         options: {
