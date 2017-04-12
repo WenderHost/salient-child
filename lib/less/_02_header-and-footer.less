@@ -1,3 +1,29 @@
+/* Preventing header col wrap down to 1146px wide */
+header#top{
+  .col.span_3{
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1237px){
+  body.ascend #header-outer[data-full-width="false"]{
+    header#top{
+      nav ul.buttons{
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1222px){
+  body.ascend #header-outer[data-full-width="false"]{
+    header#top{
+      nav > ul > li > a{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Header Left CTAs/Taglines */
 #header-secondary-outer{
   #taglines{
     float: left;
@@ -22,6 +48,41 @@
     }
   }
 }
+
+/* Breadcrumbs */
+html body .breadcrumbs-container.container-wrap,
+html body .ascend .breadcrumbs-container.container-wrap{
+  margin: 0;
+  padding: 20px 0 0 0;
+  /*z-index: 11;*/
+  width: 100%;
+  text-align: right;
+
+  .breadcrumbs-container{
+    text-align: right;
+    color: #666;
+    max-width: 1425px;
+    margin: 0 auto;
+    padding-top: 6px;
+  }
+}
+/*
+#page-header-wrap{
+  overflow: visible;
+}
+*/
+
+/* Header REQUEST INFO button */
+#header-secondary-outer nav > ul > li.request-more-info > a{
+    color: #fff !important;
+    background-color: @orange;
+}
+body[data-header-color="custom"] #header-secondary-outer nav > ul.sf-menu > li:last-child,
+#header-secondary-outer nav > ul > li:last-child{
+  border-right: none;
+}
+
+/* Social Icons in the footer */
 #footer-social{
   li{
     float: left;
