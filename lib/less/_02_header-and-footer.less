@@ -45,6 +45,15 @@ header#top{
   }
 }
 
+/* Preventing page content from sliding under header */
+@media screen and (max-width: 999px){
+  body.ascend{
+    #page-header-wrap{
+      margin-top: 0;
+    }
+  }
+}
+
 /* Adjusting the #taglines > li:last-child as the width reduces */
 @media screen and (max-width: 1040px) and (min-width: 1023px){
   body.ascend{
