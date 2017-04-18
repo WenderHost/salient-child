@@ -116,20 +116,16 @@ if($using_secondary == 'header_with_secondary') { ?>
 	<div id="header-secondary-outer" data-full-width="<?php echo (!empty($options['header-fullwidth']) && $options['header-fullwidth'] == '1') ? 'true' : 'false' ; ?>" data-permanent-transparent="<?php echo $perm_trans; ?>" >
 		<div class="container">
 			<nav>
-				<?php
-				/*
-				if(!empty($options['enable_social_in_header']) && $options['enable_social_in_header'] == '1') nectar_header_social_icons('secondary-nav');
-				/**/ ?>
 				<ul id="taglines">
 					<li>Experience our <a href="/about-us/culture-of-care/">Culture of Care</a>.</li>
 					<li>Speak with our Care Coordinator: <a href="tel:+1-855-566-1600">1-855-566-1600</a></li>
 				</ul>
 				<?php if(has_nav_menu('secondary_nav')) { ?>
-					<ul class="sf-menu">
-				   	   <?php wp_nav_menu( array('walker' => new Nectar_Arrow_Walker_Nav_Menu, 'theme_location' => 'secondary_nav', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
-				    </ul>
+					<ul class="sf-menu"><?php
+				   	   if(!empty($options['enable_social_in_header']) && $options['enable_social_in_header'] == '1') Salient\fns\header\social_icons();
+				   	   wp_nav_menu( array('walker' => new Nectar_Arrow_Walker_Nav_Menu, 'theme_location' => 'secondary_nav', 'container' => '', 'items_wrap' => '%3$s' ) );
+				   	   ?></ul>
 				<?php }	?>
-
 			</nav>
 		</div>
 	</div>

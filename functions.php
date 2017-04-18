@@ -2,6 +2,7 @@
 // Include files
 include_once 'lib/fns/breadcrumbs.php';
 include_once 'lib/fns/debug.php';
+include_once 'lib/fns/header.php';
 include_once 'lib/fns/plugins.php';
 include_once 'lib/fns/tinymce.php';
 
