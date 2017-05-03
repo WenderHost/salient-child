@@ -8,7 +8,6 @@
 namespace SalientChild\fns\breadcrumbs;
 
 function get_breadcrumbs() {
-  write_log('Starting get_breadcrumbs()...');
   /* === OPTIONS === */
   $text['home']     = 'Home'; // text for the 'Home' link
   $text['category'] = 'Archive by Category "%s"'; // text for a category page
