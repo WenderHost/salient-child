@@ -21,6 +21,29 @@
     margin-top: -38px;
 }
 
+/* Calendar Events Table */
+body:not(.woocommerce-cart) .main-content .calendar-events{
+  th{
+    text-transform: uppercase;
+  }
+
+  td{
+    vertical-align: top;
+
+    &.thumbnail{
+      border-right: none;
+    }
+
+    &.details{
+      h5{
+        padding-top: 0;
+        text-transform: uppercase;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
 /* Full Width Headers */
 @media (min-width: 1001px){
     #page-header-bg[data-bg-pos="top"] .page-header-bg-image{

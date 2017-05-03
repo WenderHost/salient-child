@@ -1,5 +1,6 @@
 <?php
 // Include files
+include_once 'lib/fns/advanced-custom-fields.php';
 include_once 'lib/fns/breadcrumbs.php';
 include_once 'lib/fns/debug.php';
 include_once 'lib/fns/header.php';
