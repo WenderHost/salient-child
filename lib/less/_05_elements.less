@@ -23,25 +23,39 @@
 
 /* Calendar Events Table */
 body:not(.woocommerce-cart) .main-content .calendar-events{
-  th{
-    text-transform: uppercase;
-  }
+  margin-top: 30px !important;
 
-  td{
-    vertical-align: top;
-
-    &.thumbnail{
-      border-right: none;
+  .details{
+    h5{
+      padding-top: 0;
+      text-transform: uppercase;
+      line-height: 20px;
     }
 
-    &.details{
-      h5{
-        padding-top: 0;
-        text-transform: uppercase;
-        line-height: 20px;
-      }
+    a.button{
+      background-color: @blue;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 3px;
+      letter-spacing: .5px;
+      font-weight: bold;
+      font-size: 16px;
     }
   }
+
+  & > .event{
+    margin-bottom: 50px !important;
+    border-bottom: 1px solid lighten(@gray,50%);
+
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+
+  img.thumbnail{
+    max-width: 300px;
+  }
+
 }
 
 /* Full Width Headers */
