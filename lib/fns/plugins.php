@@ -12,6 +12,8 @@ namespace Salient\fns\plugins;
 function author_widget_args( $user_args ) {
     $user_args['orderby'] = 'meta_value';
     $user_args['meta_key'] = 'nickname';
+    $user_args['role'] = 'author';
+    $user_args['who'] = null;
     return $user_args;
 }
 add_filter( 'author_widget_user_args', __NAMESPACE__ . '\\author_widget_args' );
